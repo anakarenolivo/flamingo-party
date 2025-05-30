@@ -207,6 +207,7 @@ const GameCanvas: React.FC = () => {
       flamingo.update();
 
       // Obstacle Management
+      // eslint-disable-next-line prefer-const
       let currentActiveObstacles = [...obstacles]; // Work with a copy
 
       // Check if it's time to generate a new obstacle
@@ -419,11 +420,6 @@ const GameCanvas: React.FC = () => {
       initializeGame();
       setGameState(GameState.Playing);
     }
-  };
-
-  const handlePauseClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation();
-    if (gameState === GameState.Playing) setGameState(GameState.Paused);
   };
 
   const handleResumeClick = (e: React.MouseEvent<HTMLButtonElement>) => {

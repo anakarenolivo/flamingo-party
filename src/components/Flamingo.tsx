@@ -1,11 +1,3 @@
-interface FlamingoProps {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-  color: string;
-}
-
 const FLAMINGO_COLOR = '#F96574'; // Theme flamingoPink
 const FLAMINGO_BEAK_COLOR = '#333333'; // Darker gray for beak
 const FLAMINGO_LEG_COLOR = '#333333'; // Darker gray for legs
